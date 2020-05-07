@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends 'firstapp/base.html' %}
+{% block body_block %}
+<h1>Welcome to relative html</h1>
+<li><a href="{% url 'firstapp:other' %}">other</a></li>
+<li><a class="btn btn-primary"  href="{% url 'admin:index' %}" role="button">admin page</a></li>
+{% endblock %}
